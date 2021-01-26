@@ -1,0 +1,92 @@
+:root {
+    --bg: #F7F1F1;
+    --primary: #00356b;
+    --primary-light: #004e9d;
+    --secondary: #0E2431;
+    --gray: #666;
+    --font-family: 'Nunito', sans-serif;
+  }
+  small{
+    color: #ff5555;
+    font-weight: bold;
+    opacity: 0;
+  }
+  small.show{
+    opacity: 1;
+  }
+  html, body, div, h1, input, ul, li, label, span{
+    outline: nome;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--bg);
+    font-family: var(--font-family);
+  }
+  
+  input, button {
+    border: 0;
+    outline: none;
+  }
+  
+  #tarefas-app{}
+    #tarefas-app .container{
+      width: 100%;
+      max-width: 420px;
+      margin: 100px auto 0;
+      background-color: var(--primary);
+      padding: 3rem 2.5rem;
+      color: #fff;
+      border-radius: 5px;
+    }
+    #tarefas-app .container ~ .container{
+        margin-top:5px;
+    }
+    #tarefas-app .app-cabecalho{
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
+    #tarefas-app .adicionar-tarefa-container{
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0;
+    }
+      #tarefas-app .adicionar-tarefa-container #campo-texto-tarefa{
+        font-size: 18px;
+        padding: 1rem;
+      } 
+        #tarefas-app .adicionar-tarefa-container #botao-submit-tarefa{
+          background: transparent;
+          color: inherit;
+          font-size: 17px;
+          border: 2px solid #fff;
+          cursor: pointer;
+          padding: 0 1rem;
+          margin-left: 10px;
+        }
+      #tarefas-app ul{}
+        #tarefas-app ul li{
+          display: flex;
+          align-items: center;
+          justify-content: unsafe;
+          background-color: var(--primary-light);
+          padding: 1.5rem 2.5rem;
+          margin: .4rem -2.5rem;
+        }
+          #tarefas-app ul li label{}
+            #tarefas-app ul li label #check-tarefa{}
+            #tarefas-app ul li label #titulo-tarefa{
+              font-size: 20px;
+              margin-left: .3rem;
+            }
+        #tarefas-app ul li.completed{
+          font-style: italic;
+          text-decoration: line-through;
+        }
+        #tarefas-app ul li.completed *{
+          opacity: .5;
+        }
