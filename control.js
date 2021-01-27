@@ -3,9 +3,14 @@ const campoTextoTarefa = document.getElementById('campo-texto-tarefa');
 const botaoSubmitTarefa = document.getElementById('botao-submit-tarefa');
 const listaTarefas = document.getElementById("lista-tarefas");
 
-//FUNÇÃO QU ELIMPA O CAMPO TODOAS AS VEZES QUE É ADICIONADO UMA TAREFA
+//FUNÇÃO QUE LIMPA O CAMPO TODOAS AS VEZES QUE É ADICIONADO UMA TAREFA
 function limparCampoTexto(){
   campoTextoTarefa.value = '';
+}
+
+// FUNÇÃO QUE LIMPA O BOARD DE TAREFAS
+function limparLista(){
+    listaTarefas.innerHTML = ""
 }
 
 //FUNÇÃO QUE PEGA A TAREFA DO CAMPO, APÓS CLIQUE NO BOTÃO
